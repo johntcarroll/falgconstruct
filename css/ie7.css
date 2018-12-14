@@ -1,0 +1,5 @@
+
+#nav, #nav li a {height: 29px !important;}
+#nav li {zoom: 1; display: inline;}
+#nav li a {zoom: 1; padding: 5px 20px 20px 20px !important;}
+#nav li:hover {text-decoration: underline;}

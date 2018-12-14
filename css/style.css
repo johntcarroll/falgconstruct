@@ -1,0 +1,192 @@
+body {margin: 0; padding: 0; font-family: "Kadwa", Arial, Helvetica, sans-serif;}
+
+@media (min-width: 801px) {.desk {display: inline !important;}}
+@media (max-width: 800px) and (min-width: 603px) {.tab {display: inline !important;}}
+@media (max-width: 602px) and (min-width: 400px) {.phab {display: inline !important;}}
+@media (max-width: 399px) and (min-width: 321px) {.phone {display: inline !important;}}
+@media (max-width: 320px) {.phonesm {display: inline !important;}}
+
+.desk, .tab, .phab, .phone, .phonesm, #width {position: fixed; top: 0; z-index: 20; padding: 0 3px; font-size: 11px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; background-color: #FF0;}
+.desk, .tab, .phab, .phone, .phonesm {left: 32px; display: none;}
+#width {left: 0px;}
+
+a, a:visited, a:hover {text-decoration: none; outline: none; -webkit-tap-highlight-color:transparent;}
+img {border: 0;}
+hr {height: 1px; border: 0px; color: #BBB; background-color: #BBB; margin: 15px 0;}
+.emp {font-weight: 700; font-size: 19px;}
+
+.phlink {color: inherit !important; text-decoration: none !important; white-space: nowrap;}
+.phlink:hover {cursor: text;}
+
+
+/*-----------------------------------------------*/
+
+/*HEADER*/
+#header {width: 100%; position: relative;}
+#social {top: 3px; right: 3px; position: absolute;}
+#logo {padding: 7px 10px 0 10px;}
+#logo, #phone, #lic {margin: auto; text-align: center;}
+#logo img {width: 100%; max-width: 450px;}
+#phone {font-size: 32px; line-height: 36px; font-weight: 700; margin: 6px auto 10px auto;}
+#phone a {text-decoration: none;}
+#lic {font-size: 13px; line-height: 17px; padding-bottom: 3px;}
+
+@media (max-width: 440px) {
+#social img {width: 19px;}
+#lic {font-size: 11px; line-height: 15px;}
+}
+
+@media (max-width: 500px) {#phone {font-size: 28px; line-height: 32px;}}
+@media (max-width: 320px) {#lic span {display: block;}}
+@media (max-width: 340px) {#phone {font-size: 26px; line-height: 30px;}}
+
+/*-----------------------------------------------*/
+
+/*MENU*/
+#nav, #nav a {-webkit-tap-highlight-color:transparent;}
+#nav a:hover {background: none; /*prevents grey background in IE*/}
+.slicknav_menu {display:none;}
+
+#nav {text-align: center; position: relative; width: 100%; margin-bottom: 2px;}
+#nav, #nav li a {height: 52px;}
+#nav ul {margin: 0; padding: 0;}
+#nav li {display: inline-block; margin-left: -4px;}
+#nav li, #nav li a {list-style:none; vertical-align: middle;}
+#nav li a {display: table-cell; padding: 2px 22px 0px 22px; font-size: 16px; line-height: 22px; font-weight: 400;}
+
+#nav a.selected:hover {text-decoration: none;}
+/*#nav li a:hover {text-decoration: underline;}*/
+
+@media (max-width: 750px) {#nav span {display: block;}}
+@media (max-width: 650px) {#nav li a {padding: 2px 18px 0px 18px;}}
+
+@media (min-width: 601px) {#menu {display: none;}}
+		
+@media (max-width: 600px) {
+#nav {display: none;}
+.js #menu, #nav td, #menu {display:none;}
+.slicknav_menu {display:block; position: relative; width: 100%; text-transform: uppercase;}
+
+.slicknav_btn {position: absolute; top: 0; margin-top: 8px; right: 1px;}
+
+/*use for more narrow menu: #mobilemenuarea {width: 50%; text-align: center; margin: 73px auto 0 auto;}*/
+
+/*not needed? #mobileback {height: 56px; position: absolute; width: 100%; z-index: -1;}
+.slicknav_menu, #mobileback {margin-top: 3px;}*/
+}
+
+@media (max-width: 315px) {.slicknav_menu {text-transform: none;}}
+@media (max-width: 300px) {.slicknav_nav {font-size: 16px !important;}}
+
+
+/*-----------------------------------------------*/
+
+/*TOP PIC (not slider)*/
+
+#toppic {margin: 0; padding: 0;}
+#toppic img {width: 100%;}
+
+/*@media (min-width: 921px) {#toppic {height: 320px; width: 900px;}}*/
+
+
+/*-----------------------------------------------*/
+
+
+/*BODY AREA*/
+
+#bodyback, #bodyarea {margin: 0; padding: 0;}
+#bodyarea {padding: 10px 25px 20px 25px;}
+#bodyarea, h1 {font-size: 18px; line-height: 27px; font-weight: 400;}
+
+@media (min-width: 921px) {#bodyback {margin: 0px auto auto auto; padding: 0; max-width: 900px; box-shadow: 0px 3px 20px 5px #000;}}
+
+#bodyhead {font-size: 24px; line-height: 31px; font-weight: 700; text-align: center;}
+#bodyhead h2 {font-size: 19px; line-height: 23px; margin: 0; padding: 0; font-weight: 400;}
+
+@media (max-width: 399px) {
+#bodyarea {padding: 5px 15px 15px 15px;}
+#bodyarea, h1 {font-size: 17px; line-height: 24px;}
+#bodyhead {font-size: 22px; line-height: 28px;}
+}
+
+.heading {font-size: 20px; line-height: 26px; font-weight: 700;}
+
+
+/*-----------------------------------------------*/
+
+/*PHOTO GALLERY*/
+
+#pics {text-align: center; margin-bottom: 25px;}
+#pics th {width: 3%;}
+#pics img {border: 1px solid #777; margin-top: 10px;}
+#pics p {margin: 0 0 10px 0; font-size: 14px;}
+#pics img.tall {width: 73%;}
+
+@media (min-width: 851px) {#pics img {max-width: 380px;}}
+@media (max-width: 850px) and (min-width: 603px) {#pics img {width: 100%;}}
+
+@media (max-width: 602px) {
+#pics img {width: 100%;}
+#pics td, #pics th {display: block;}
+}
+
+
+/*-----------------------------------------------*/
+
+/*BOTTOM AREA*/
+
+#pay {margin: 7px auto 0 auto; text-align: center;}
+#pay img {width: 200px;}
+
+#bottomarea {width: 100%; font-size: 12px; line-height: 20px; padding-bottom: 15px; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+#btm_menu {font-size: 15px; padding: 8px 0; line-height: 28px; /*text-transform: uppercase;*/}
+#btm_menu a {text-decoration: none; padding: 0 11px 0 5px;}
+#btm_menu a:hover {text-decoration: underline;}
+.rights {display: inline;}
+.copy {padding-top: 5px;}
+#btm_menu span {padding: 0  !important; margin: 0 !important;}
+
+@media (max-width: 405px) {.rights {display: block;}}
+@media (max-width: 305px) {.conamebtm, .web a {display: block;}}
+
+@media (max-width: 705px) {
+#btm_menu a {display: block; text-transform: uppercase; padding: 6px;}
+#btm_menu span {display: none;}
+}
+
+@media (max-width: 300px) {#btm_menu {font-size: 14px;}}
+
+/*====================================================*/
+
+
+/*COLORS*/
+
+@media (min-width: 801px) {body {background: #111111 url('../back.jpg') repeat !important;}}
+body {background-color: #111111; color: #333;}
+
+#bodyback, #bodyarea {background-color: #FFF;}
+#header {background-color:#FFF;}
+a, a:visited, a:hover {color: #2665A3;}
+#phone, #phone a {color: #000;}
+
+#bodyhead, .emp {color: #CB2429;}
+
+
+
+#nav, #nav ul, #nav li, #mobileback, #mobilemenuarea, .slicknav_menu, .slicknav_btn {background-color: #BF0000;}
+#nav a, .slicknav_menu a, .slicknav_menu .slicknav_menutxt, .slicknav_nav, .slicknav_nav a {color: #FFF;}
+#nav a.selected, #nav a.selected:hover, .slicknav_menu a.selected, .slicknav_menu a.selected:hover {background-color: #970000;}
+#nav a:hover, .slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover {background-color: #E23434;}
+.slicknav_menu .slicknav_icon-bar {background-color: #FFF;}
+.slicknav_nav a {border-top: 1px dotted #CCC;}
+
+
+
+#rightbox, #fbfeed-dsk, #fbfeed-ph {background-color: #DDD;}
+
+#bottomarea, #bottomarea a, #btm_menu a {color: #FFF;}
+#btm_menu {background-color:#333;}
+#bottomarea {background-color: #000;}
+.tb {color: #E09688 !important;}
+
+

@@ -1,0 +1,9 @@
+.ie8msg {display: block !important; margin: auto; text-align: center; font-size: 18px; padding: 5px 0 8px 0; font-weight: bold; color: #FF0000; background-color: #FFF000; z-index: 500;}
+
+body {background: #111111 url('../back.jpg') repeat !important;}
+
+#menu {display: none;}
+
+#bodyback {margin: 0px auto auto auto; padding: 0; width: 900px; box-shadow: 0px 3px 20px 5px #000;}
+
+#pics img {width: 380px;}

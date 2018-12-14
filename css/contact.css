@@ -1,0 +1,53 @@
+
+/*CONTACT FORM*/
+
+.conamecont, .ph2cont {font-size: 20px; font-weight: 700;}
+
+#contactformarea {height: 480px;}
+#contactinfo p {margin: 10px auto;}
+.text {height: 24px;}
+.text, #comments
+{padding: 2px; margin-bottom: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; resize: none; width: 300px; background-color: #EEE; border: 1px solid #BBB;}
+#comments {height: 100px;}
+#response {position: absolute; text-align: center; left: 0; right: 0; font-size: 20px; line-height: 36px; font-weight: 700;}
+#privacy {margin-top: 20px; text-align: center; font-size: 11px; line-height: 14px;}
+
+.servingcont {font-size: 16px; line-height: 22px; font-weight: 400;}
+.servingcont span {display: block;}
+
+.submit {font-size: 18px; margin-top: 5px;}
+
+
+@media (min-width: 751px) {
+#bodyarea.contact {height: 530px;}
+.conamecont span {display: block;}
+#contactinfo {position: relative; float: left; margin: 10px 0 0 15px;}
+#contactformarea {position: relative; float: right; margin-right: 20px;}
+#response {margin: 0;}
+}
+
+@media (max-width: 750px) {
+#contactinfo {text-align: center;}
+#contactformarea {margin-top: 25px; text-align: left;}
+#response {margin: 300px auto 0 auto}
+.phoneline {margin: auto;}
+}
+
+@media (max-width: 540px) and (min-width: 350px) {.conamecont span {display: block;}}
+@media (max-width: 399px) and (min-width: 321px) {.text, #comments {width: 260px;}}
+@media (max-width: 360px) {.servingcont span {display: inline;}}
+@media (max-width: 355px) {.servingcont {font-size: 14px; line-height: 21px;}}
+@media (min-width: 340px) {#privacy span {display: block;}}
+@media (max-width: 320px) {
+.text, #comments {width: 220px;}
+#response {font-size: 18px; line-height: 26px;}
+}
+
+
+/*---------------------------------------------------*/
+
+/*Contact Page Google Map
+
+#gmap_cont iframe {border: 1px solid #AAA; width: 100%; max-width: 425px; height: 330px;}
+@media (min-width: 751px) {#gmap_cont {margin: 20px 0 0 0; width: 420px}}
+@media (max-width: 750px) {#gmap_cont {text-align: center; margin: 25px auto auto auto;}}*/
